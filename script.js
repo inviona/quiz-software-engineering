@@ -159,11 +159,11 @@ const quizData = [
     let incorrectAnswersHtml = '';
     for (let i = 0; i < incorrectAnswers.length; i++) {
       incorrectAnswersHtml += `
-        <p>
-          <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
-          <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
-          <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
-        </p>
+      <p>
+      <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
+      <strong>Your Answer:</strong> <span style="color: red;">${incorrectAnswers[i].incorrectAnswer}</span><br>
+      <strong>Correct Answer:</strong> <span style="color: green;">${incorrectAnswers[i].correctAnswer}</span>
+    </p>
       `;
     }
   
